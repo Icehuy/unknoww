@@ -2976,7 +2976,7 @@ function Library:CreateWindow(...)
         BackgroundColor3 = Library.MainColor;
         BorderColor3 = Library.AccentColor;
         BorderMode = Enum.BorderMode.Inset;
-        Position = UDim2.new(0, 1, 5, 1);
+        Position = UDim2.new(0, 1, 0, 1);
         Size = UDim2.new(1, -2, 1, -2);
         ZIndex = 1;
         Parent = Outer;
@@ -2988,7 +2988,7 @@ function Library:CreateWindow(...)
     });
 
     local WindowLabel = Library:CreateLabel({
-        Position = UDim2.new(0, 1, 0, 0);
+        Position = UDim2.new(0, 7, 0, 0);
         Size = UDim2.new(0, 0, 0, 50);
         Text = Config.Title or '';
         TextXAlignment = Enum.TextXAlignment.Left;
